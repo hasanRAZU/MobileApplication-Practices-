@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/edit_text_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:inputType="number"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/button_store_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store Data"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/edit_text_get_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name to Fetch Data"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/button_fetch_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetch Data"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/edit_text_update_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name to Update"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/edit_text_update_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Age"
+        android:inputType="number"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/button_update_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Data"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/text_view_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/text_view_serialNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/text_view_rowsUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:ignore="HardcodedText" />
+</LinearLayout>
