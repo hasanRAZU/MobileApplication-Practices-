@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Database Practice</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="your_info">Your Info</string>
+</resources>

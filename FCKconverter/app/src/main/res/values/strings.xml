@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TemperatureConverter</string>
+    <string-array name="temperatureUnitType">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+</resources>

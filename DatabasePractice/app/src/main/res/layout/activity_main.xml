@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secret Info"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="30sp"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+
+
+            <TextView
+                android:id="@+id/textView_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lover"
+                android:textSize="20sp"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Love Code"
+                android:textSize="20sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accuracy"
+                android:textSize="20sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <EditText
+                android:id="@+id/editText_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="abc@gmail.com"
+                android:text="Nijhum"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp"
+                android:width="200sp"
+                tools:ignore="HardcodedText,SmallSp" />
+            <EditText
+                android:id="@+id/editText_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="******"
+                android:text="Meherun"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                android:width="200sp"
+                tools:ignore="HardcodedText,SmallSp" />
+            <EditText
+                android:id="@+id/editText_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="017*********"
+                android:text="100%"
+                android:textSize="15sp"
+                android:width="200sp"
+                android:inputType="phone"
+                tools:ignore="HardcodedText,SmallSp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+
+
+        <Button
+            android:id="@+id/button_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="signUp"
+            android:text="Sign Up"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:id="@+id/button_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="signIn"
+            android:text="Sign In"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Result: "
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="193dp"
+        android:layout_height="323dp"
+        app:srcCompat="@drawable/img" />
+
+
+</LinearLayout>

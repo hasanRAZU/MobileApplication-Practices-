@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/temperatureConverter"
+        android:text="Temperature Converter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingBottom="50sp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        tools:ignore="HardcodedText"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/temperature"
+            android:text="Enter Temperature"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:ignore="hardcodedText" />
+
+        <TextView
+            android:id="@+id/type"
+            android:text="Select Type"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="18sp"
+            tools:ignore="hardcodedText"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/temperatureInputField"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            tools:ignore=",Autofill,LabelFor,TextFields" />
+        <Spinner
+            android:id="@+id/action_bar_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="107sp"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/showResult"
+            android:hint="Fahrenheit: 0.0"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            tools:ignore="Autofill,RtlSymmetry,TextFields,hardcodedText"/>
+        <Button
+            android:id="@+id/convertButton"
+            android:text="Convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="125sp"
+            android:paddingLeft="37.5sp"
+            android:paddingRight="37.5sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </LinearLayout>
+</LinearLayout>
